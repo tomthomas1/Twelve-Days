@@ -10,12 +10,12 @@ class TwelveDays {
                           "twelve Drummers Drumming, "};
 
     void lyrics() {
-        System.out.println(verses(1,13));
+        System.out.println(verses(1,12));
     }
 
     String verses(int startVerse, int endVerse) {
         StringBuilder verses = new StringBuilder();
-        for (int i = startVerse; i < endVerse; i++)
+        for (int i = startVerse; i <= endVerse; i++)
             verses.append(verse(i)).append("\n\n");
         return verses.toString();
     }
